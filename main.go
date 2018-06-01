@@ -22,6 +22,8 @@ func DefaultGC() *GlobalConfig {
 }
 
 func main() {
+	println("who am i")
+
 	c := flag.String("c", "gofluent.conf", "config filepath")
 	p := flag.String("p", "", "write cpu profile to file")
 	v := flag.String("v", "error.log", "log file path")
